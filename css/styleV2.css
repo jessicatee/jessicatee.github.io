@@ -1,0 +1,425 @@
+@font-face {
+	font-family: 'Jenna';
+	src: url(../fonts/JennaSue.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	height: 680px;
+	text-align: center;
+	color: snow;
+	background: linear-gradient(#333333, transparent 85%),
+				linear-gradient(0deg, #fff, transparent),
+				#333333 url('../img/header.jpg') no-repeat center;
+	background-size: cover;
+}
+
+i {
+	font-family: 'FontAwesome';
+}
+
+footer {
+	padding: 60px 0;
+	text-align: center;
+	background-color: #333333;
+	color: rgb(204, 204, 204);
+	margin-top: 100px;
+}
+
+h1 {
+    font: 400 110px/46px 'Jenna', sans-serif;
+    margin: 0 0 45px;
+    text-align: center;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, .8);
+}
+
+h2 {
+	font: 600 25px/23px 'Raleway', sans-serif;
+    margin: 0 0 70px 0;  
+    text-align: center;
+    display: inline-block;
+    border-bottom: 2px solid;  
+    padding-bottom: 5px;
+    clear: both;
+}
+
+footer h2 {
+	margin: 0 0 60px 0;
+	color: #d9411e;
+}
+
+h3 {
+	font: 600 18px/23px 'Raleway', sans-serif;
+    margin: 0 0 23px 0;  
+    text-align: center;  
+}
+
+footer h3 {
+	padding-top: 20px;
+	color: #d9411e;
+
+}
+
+p, li, a {
+	font: normal 16px/23px 'Roboto', sans-serif;
+    margin: 0 3px 23px;
+    text-align: left;
+}
+
+a:link {
+	color: snow;
+	text-decoration: none;
+}
+
+a:visited {
+	color: snow;
+}
+
+form {
+	box-sizing: border-box;
+}
+
+input, textarea {
+	border: 1px solid rgba(51, 51, 51, .50);
+	border-radius: 4px;
+}
+
+input, textarea {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 5px;
+	font-size: 16px;
+	font: normal 16px/23px 'Roboto', sans-serif;
+}
+
+label {
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	color: #D9411E;
+	margin: 10px 0;
+}
+
+#header-text {
+	display: inline-block;
+	letter-spacing: .065em;
+	border-radius: 19px;
+	margin-top: 250px;
+	margin-bottom: 250px;
+	padding: 10px;
+}
+
+#header-text p {
+	font: normal 16px/23px 'Roboto', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	margin: 0;
+}
+
+#header-button {
+	font-size: 18px;
+	background-color: rgba(255,250,250,.35);
+	color: #333;
+	border-radius: 5px;
+	border: solid 3px snow;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	padding: 13px;
+	transition: background-color 0.5s ease;
+}
+
+#header-button:hover {
+	background-color: rgba(51,51,51,.35);
+	cursor: pointer;
+	cursor: hand;
+}
+
+#contact-form {
+	width: 65%;
+	float: left;
+	text-align: left;
+}
+
+#contact-details {
+	width: 30%;
+	float: right;
+}
+
+#contact-details p {
+	line-height: 2px;
+}
+
+#contact-details h3 {
+	text-align: left;
+	color: #D9411E;
+}
+
+#form-button {
+	display: block;
+	font-size: 20px;
+	padding: 10px 15px;
+	border-radius: 10px;
+	background-color: snow;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #D9411E;
+	color: #d9411e;
+	cursor: pointer;
+	cursor: hand;
+}
+
+#aboutme-image {
+	text-align: center;
+	margin-bottom: 20px;
+}	
+
+#aboutme-image img {
+	max-height: 165px;
+	border-radius: 100px;
+	border: 3px solid #d9411e;
+}
+
+#social-links {
+	padding-top: 40px;
+	text-align: center;
+}
+
+#social-links li {
+	display: inline;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin: 0;
+}
+
+#social-links a {
+	text-decoration: none;
+	color: #D9411E;
+}
+
+.wrapper {
+	width: 100%;
+}
+
+.container {
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+.padded {
+	padding-top: 115px;
+}
+
+.icon {
+	text-align: center;
+	color: #d9411e;
+}
+
+.what-i-do {
+	text-align: center;
+
+}
+
+.what-i-do > section > h3 {
+	font: 600 18px/23px 'Raleway', sans-serif;
+    margin: 40px;  
+    text-align: center;  
+}
+
+.portfolio {
+	text-align: center;
+	overflow: hidden;
+}
+
+.portfolio-example img {
+	width: 100%;
+}
+
+.portfolio-example { 
+	width: 46%;
+	display: inline-block; 
+	position: relative; 
+	overflow: hidden; 
+	margin: 0 5px 0px;
+	border-radius: 20px;
+}
+
+.caption { 
+	width: 100%; 
+	padding: 10px 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.caption p, .caption h3 { 
+	font-size: .75em;
+}
+
+
+.portfolio-img {
+	width: 100%;
+	border-radius: 20px;
+}
+
+.contact-me {
+	overflow: auto;
+	text-align: center;
+}
+
+.clearfix {
+	clear: both;
+}
+
+
+/* Desktops and laptops ----------- */
+@media (min-width : 901px) {
+	.what-i-do section {
+		width: 33.33333333%;
+		float: left;
+	}
+
+	.caption { 
+		position: absolute; 
+		box-sizing: border-box;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.75); 
+		color: white; 
+		opacity: 0;
+		bottom: 3px;
+		padding: 4px 5px; 
+		-webkit-transition: all 0.6s ease;
+	  	-moz-transition:    all 0.6s ease;
+	  	-o-transition:      all 0.6s ease;
+	  	border-radius: 20px;
+	}
+
+	.portfolio-example:hover .caption {
+		opacity: 1;
+		left: 0;
+		border-radius: 20px;
+	}
+
+	.caption h3 {
+		padding-top: 170px;
+	}
+
+	#aboutme-image {
+	display: inline;
+	float: left;
+	}
+
+	#aboutme-image img {
+	max-height: 190px;
+	margin: 5px 0;
+	}
+
+	#aboutme-text {
+	display: inline;
+	float: right;
+	width: 75%;
+	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media (min-width : 480px) and (max-width : 900px) {
+	header {
+		height: 480px;
+	}
+
+	#header-text {
+		margin-top: 150px;
+		margin-bottom: 150px;
+	}
+
+	#contact-me {
+		padding: 115px 5px 0;
+	}
+
+	.fade-caption p {
+		display: none;
+	}
+
+	.caption {
+		padding: 0;
+	}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media (min-width : 300px) and (max-width : 480px) {
+	
+	p, li, a {
+		font-size: .95em;
+	}
+
+	header {
+		height: 480px;
+	}
+
+	h1 {
+		font: 400 80px/46px "Jenna",sans-serif;
+		margin: 0px 0px 20px;
+	}
+
+	p, li, a {
+		font-size: .95em;
+	}
+
+	#header-text {
+		margin-top: 170px;
+		margin-bottom: 150px;
+	}
+
+	#header-button {
+		margin-top: 5px;
+	}
+
+	#contact-me {
+		padding: 115px 5px 0;
+	}
+
+	#contact-form, #contact-details {
+		float: none;
+		width: 100%;
+	}
+
+	#contact-details h3, #contact-details p {
+		text-align: center;
+	}
+
+	#aboutme-text {
+		margin: 0 10px;
+	}
+
+	.i-do-text p {
+		margin: 0 10px;
+	}
+
+	.portfolio-example { 
+	display: block;
+	width: 95%;
+	position: relative; 
+	overflow: hidden; 
+	margin: 0 5px 0px;
+	border-radius: 20px;
+	}
+
+	.fade-caption p {
+		display: none;
+	}
+
+	.caption {
+		padding: 0;
+	}
+
+}
+
+
+
