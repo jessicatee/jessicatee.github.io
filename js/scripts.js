@@ -45,3 +45,11 @@ $(function(){
         }
     });
 });
+
+$(".fade").mouseenter(function() {
+    $("#" + this.id).prev().css("opacity", 0.25);
+});
+
+$(".fade").mouseleave(function() {
+    $("#" + this.id).prev().css("opacity", 1);
+});

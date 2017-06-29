@@ -10,32 +10,29 @@
 		<link href="css/reset.css" rel="stylesheet">
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.min.css">
-		<link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600%7CRoboto:400,300,700" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300,400|Roboto:100,300,400" rel="stylesheet"> 
 		<link rel=”icon” href=”favicon.ico” type=”image/x-icon”>
 		<link rel=”shortcut icon” href=”favicon.ico” type=”image/x-icon”>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-
-		<script src="js/jquery-2.2.1.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
 	</head>
 
 	<body>
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span>
 					</button>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav navbar-nav navbar-right">
+					<ul class="nav navbar-nav navbar-left">
 						<li><a href="#home">Home</a></li>
 						<li><a href="#about">About</a></li>
 						<li><a href="#portfolio">Portfolio</a></li> 
 						<li><a href="#contact-me">Contact</a></li> 
-						<li><a href="http://www.jesstaylor.co.uk/blog">Blog</a></li>
 					</ul>
 				</div>
 			</div>
@@ -45,49 +42,116 @@
 
 		<div id="home" class="header">
 			<div class="text-center center-block" id="logo">
-				<h1>Jess Taylor</h1>
-				<h4>Web Design</h4>
+				<h1>Jessica Taylor</h1>
 				<ul class="social">
-					<!-- <li><a href="https://twitter.com/jessicatee84"><i class="fa fa-3x fa-twitter"></i></a></li> -->
+					<li><a href="https://twitter.com/jessicaisace"><i class="fa fa-3x fa-twitter"></i></a></li>
 					<li><a href="https://github.com/jessicatee"><i class="fa fa-3x fa-github"></i></a></li>
 					<li><a href="https://uk.linkedin.com/in/jessica-taylor-b223281b"><i class="fa fa-3x fa-linkedin-square"></i></a></li>
 				</ul>
+				<h4>Web Developer</h4>
+				<button><a href="#">Get in touch!</a></button>
+				
 			</div>
 		</div>
 
 		<div class="smoothScroll what-i-do padded" id="what-i-do">
-			<div class="content">
-				<h2> - What I Do - </h2>
-				<div class="clearfix"></div>
-				<section>
-					<p class="icon"><i class="fa fa-desktop fa-4x"></i></p>
-					<h3>Web Design</h3>
-					<span class="i-do-text">
-					<p>Using the latest technology and standards I help to build individually tailored websites, that will work across all browsers, for small-medium businesses. We'll sit down and discuss what you want from a site, what your customers will want from your site, and I will work with you to design the quality online presence that your business needs in today's online world.</p>
+			<div class="wrapper">
+				<div class="row">
+					<div class="col-md-12">
+						<h2> - What I Do - </h2>
+					</div>
+				</div>
+				<div class="row" id="whatido-text-columns">
+					<div class="col-md-4">
+						<p class="icon"><i class="fa fa-desktop fa-4x"></i></p>
+						<h3>Web Design</h3>
+						<span class="i-do-text">
+						<p>Using the latest technology and standards I help to build individually tailored websites, that will work across all browsers, for small-medium businesses. We'll sit down and discuss what you want from a site, what your customers will want from your site, and I will work with you to design the quality online presence that your business needs in today's online world.</p>
 
-					<p>Have a look at some of my other work below, and if you like what you see just <a href="#contact-me">get in touch</a>.</p>
-					</span>
-				</section>
-				<section>
-					<p class="icon"><i class="fa fa-4x fa-mobile"></i></p>
-					<h3>Responsive Design</h3>
-					<span class="i-do-text">
-					<p>When people want to find something these days they aren't always behind a monitor, mobile web browsing has now exceeded PC usage. Because of this it is vital that your website looks good on smartphones. With a little help from the Bootstrap framework I create fully responsive websites, ensuring that your brand is showcased and seen exactly how you want it to, whatever device customers are using.</p>
+						<p>Have a look at some of my other work below, and if you like what you see just <a href="#contact-me">get in touch</a>.</p>
+						</span>
+					</div>
+					<div class="col-md-4">
+						<p class="icon"><i class="fa fa-4x fa-mobile"></i></p>
+						<h3>Responsive Design</h3>
+						<span class="i-do-text">
+						<p>When people want to find something these days they aren't always behind a monitor, mobile web browsing has now exceeded PC usage. Because of this it is vital that your website looks good on smartphones. With a little help from the Bootstrap framework I create fully responsive websites, ensuring that your brand is showcased and seen exactly how you want it to, whatever device customers are using.</p>
 
-					<p>Try resizing this browser window, my site still looks awesome right? </p>
-					</span>
-				</section>
-				<section>
-					<p class="icon"><i class="fa fa-4x fa-wrench"></i></p>
-					<h3>Web Development</h3>
-					<span class="i-do-text">
-					<p>Specialising in Front-end design I hand-code all of my sites using the latest HTML5 & CSS3 standards, I also use version control meaning that any changes made can be rolled back. I will create your own unique vision to convey your brand in exactly the style that you want it. I have a passion for building efficent, responsive, and interactive content that you and your customers will love.</p>
+						<p>Try resizing this browser window, my site still looks awesome right? </p>
+						</span>
+					</div>
+					<div class="col-md-4">
+						<p class="icon"><i class="fa fa-4x fa-wrench"></i></p>
+						<h3>Web Development</h3>
+						<span class="i-do-text">
+						<p>Specialising in Front-end design I hand-code all of my sites using the latest HTML5 & CSS3 standards, I also use version control meaning that any changes made can be rolled back. I will create your own unique vision to convey your brand in exactly the style that you want it. I have a passion for building efficent, responsive, and interactive content that you and your customers will love.</p>
 
-					<p>If you have an idea you want to talk about I would love to sit down and chat, please <a href="#contact-me">get in touch</a>. </p>
-					</span>
-				</section>
+						<p>If you have an idea you want to talk about I would love to sit down and chat, please <a href="#contact-me">get in touch</a>. </p>
+						</span>
+					</div>
+				</div>
 			</div>
-			<div class="clearfix"></div>
+			
+		</div>
+
+		<div class="smoothScroll container-fluid portfolio" id="portfolio">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>- What I've Done -</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-4 project">
+					<img class="project-image image-responsive" src="img/tributepage.png" id="image1">
+					<span class="fade project-text" id="text1">
+						<h3>Tribute Page</h3>
+						<p>Responsive | HTML | CSS</p>
+						<a href="#">View</a>
+					</span>
+				</div>
+				<div class="col-md-4 col-sm-4 project">
+					<img class="project-image image-responsive" src="img/randomquote.png" id="image2">
+					<span class="fade project-text" id="text2">
+						<h3>Random Quote Machine</h3>
+						<p>Responsive | JavaScript | Jquery</p>
+						<a href="#">View</a>
+					</span>
+				</div>
+				<div class="col-md-4 col-sm-4 project">
+					<img class="project-image image-responsive" src="img/photo3.jpeg" id="image3">
+					<span class="fade project-text" id="text3">
+						<h3>Project Title</h3>
+						<p>Responsive | Wordpress</p>
+						<a href="#">View</a>
+					</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-4 project">
+					<img class="project-image image-responsive" src="img/photo4.jpeg" id="image4">
+					<span class="fade project-text" id="text4">
+						<h3>Project Title</h3>
+						<p>Responsive | Wordpress</p>
+						<a href="#">View</a>
+					</span>
+				</div>
+				<div class="col-md-4 col-sm-4 project">
+					<img class="project-image image-responsive" src="img/photo5.jpeg" id="image5">
+					<span class="fade project-text" id="text5">
+						<h3>Project Title</h3>
+						<p>Responsive | Wordpress</p>
+						<a href="#">View</a>
+					</span>
+				</div>
+				<div class="col-md-4 col-sm-4 project">
+					<img class="project-image image-responsive" src="img/photo6.jpeg" id="image6">
+					<span class="fade project-text" id="text6">
+						<h3>Project Title</h3>
+						<p>Responsive | Wordpress</p>
+						<a href="#">View</a>
+					</span>
+				</div>
+			</div>
 		</div>
 		<div class="clearfix"></div>
 		<div id="about" class="about-me">
@@ -103,40 +167,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="smoothScroll portfolio padded" id="portfolio">
-			<div class="content">
-				<h2> - Portfolio - </h2>
-				<p>So this is where examples of my work will go....when i've done some!</p>
-				<div class="portfolio-example">
-					<img class="portfolio-img" src="img/beer.jpg" alt="portfolio piece">
-					<div class="caption fade-caption">
-						<h3>Beers in Birmingham</h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-					</div>
-				</div>
-				<div class="portfolio-example">
-					<img class="portfolio-img" src="img/bikes.jpg" alt="portfolio piece">
-					<div class="caption fade-caption">
-						<h3>Riding their bikes at Xmas</h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-					</div>
-				</div>
-				<div class="portfolio-example">
-					<img class="portfolio-img" src="img/portrait.jpg" alt="portfolio piece">
-					<div class="caption fade-caption">
-						<h3>The Kids</h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-					</div>
-				</div>
-				<div class="portfolio-example">
-					<img class="portfolio-img" src="img/boppard.jpg" alt="portfolio piece">
-					<div class="caption fade-caption">
-						<h3>A Trip to Boppard</h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-					</div>
-				</div>
-			</div>
-		</div>
+		
 		
 		<div id="contact-me" class="contact">
 			<div class="content">
@@ -147,7 +178,7 @@
 					</div>
 					<div class="col-sm-6">
 						<ul class="contact-links">
-							<!-- <li><a href="https://twitter.com/jessicatee84"><i class="fa fa-fw fa-4x fa-twitter"></i> Twitter</a></li> -->
+							<li><a href="https://twitter.com/jessicaisace"><i class="fa fa-fw fa-4x fa-twitter"></i> Twitter</a></li>
 							<li><a href="https://github.com/jessicatee"><i class="fa fa-fw fa-4x fa-github"></i> Github</a></li>
 							<li><a href="https://uk.linkedin.com/in/jessica-taylor-b223281b"><i class="fa fa-fw fa-4x fa-linkedin-square"></i> LinkedIn</a> </li>
 							<li><a href="https://www.facebook.com/Jess-Taylor-Web-Design-843976765735883/"><i class="fa fa-fw fa-4x fa-facebook"></i> Facebook</a></li>						
@@ -164,9 +195,19 @@
 				<li><a href="#portfolio">Portfolio</a></li>
 				<li><a href="#contact-me">Contact</a></li>
 			</ul>
-			<p>Copyright &#169 Jess Taylor Web Design 2016</p>
+			<p>Copyright &#169 Jess Taylor Web Design 2017</p>
 		</footer>
 	</div><!-- </div> -->
+
+		<!-- Bootstrap core JavaScript
+	    ================================================== -->
+	    <!-- Placed at the end of the document so the pages load faster -->
+
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	    <script src="js/scripts.js"></script>
 	</body>
-	<script src="js/scripts.js"></script>
 </html>
+
+

@@ -1,5 +1,13 @@
+/*-------Fonts-----------
+    font-family: 'Raleway', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
+
+    Boston Blue : rgb(78,140,167) or #4E8CA7;
+------------------------*/
+
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 a {
@@ -10,15 +18,24 @@ a {
 h1,
 h4 {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto ', sans-serif;
+  font-weight: 100;
+}
+
+h1  {
+  font-size: 50px;
+}
+
+h4 {
+  font-size: 30px;
 }
 
 a {
-  transition: color .75s;
+  transition: color .50s ease;
 }
 
 a:hover {
-  color: #252525;
+  color: #203A45;
 }
 
 .container {
@@ -32,8 +49,10 @@ a:hover {
   margin: 0 auto;
 }
 
-.navbar {
-  background-color: rgba(255, 255, 255, .90)
+.navbar,
+.navbar-default {
+  border: none;
+  background-color: rgba(255,255,255,0.51);
 }
 
 .navbar-toggle {
@@ -42,23 +61,27 @@ a:hover {
 }
 
 .navbar-default .navbar-nav>li>a {
-  font-weight: bold;
-  color: #252525;
-  transform: color .75s;
+  transition: all .50s ease;
+  transition-property: color , border-bottom;
+  font-size: 19px;
+  font-weight: 100;
+  color: rgb(50,90,107);
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-  color: rgb(232, 117, 136);
+  border-bottom: 1px solid  #203A45;
+  color: #203A45;
 }
 
-
+.navbar-collapse {
+  padding-left: 30px;
+}
 
 .header {
-  margin: 0;
+  margin-bottom: 200px;
   padding-top: 200px;
   width: 100%;
   height: 615px;
-  background: url("http://res.cloudinary.com/dck40m3wf/image/upload/v1455459914/Portfolio/fancy-floral-pattern-384.jpg") repeat;
 }
 
 .contact-links .fa-4x {
@@ -69,14 +92,24 @@ a:hover {
 #logo {
   background-color: rgba(255, 255, 255, .93);
   border-radius: 5px;
-  color: #252525;
+  color: #4E8CA7;
   width: 350px;
   padding: 35px 0;
 }
 
+#logo button {
+  background-color: white;
+  border: 1px solid #4E8CA7;
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 19px;
+  margin-top: 30px;
+}
+
 .social {
-  padding-top: 35px;
-  color: rgb(238, 135, 154);
+  padding: 35px 0 35px 0;
+  color: #4E8CA7;
+  margin: 0;
 }
 
 .social li {
@@ -84,13 +117,16 @@ a:hover {
   padding: 20px
 }
 
+
+
 /*---------------About Me-----------------*/
 
 .about-me {
   
   padding: 125px 20px;
-  background-color: rgba(232, 117, 136, .75);
+  background-color: rgba(78,140,167,0.75);
   font-size: 1.15em;
+  color: white;
 }
 
 .about-me img {
@@ -109,15 +145,27 @@ a:hover {
 .what-i-do {
   text-align: center;
   margin-bottom: 100px;
+  background-color: rgba(78,140,167,0.75);
+  color: white ;
+}
 
+.what-i-do .wrapper {
+  width: 85%;
+  margin: 0 auto ;
 }
 
 .what-i-do h2 {
-  margin: 100px 0;
+  color: white;
+  margin: 100px 0 50px 0;
+}
+
+.what-i-do h3 {
+  color: white;
+  margin-bottom: 25px;
 }
 
 .what-i-do a {
-  color: rgb(232, 117, 136);
+  color: rgb(78,140,167);
 }
 
 .what-i-do section {
@@ -137,69 +185,78 @@ a:hover {
     font-size: 1.5em;
 }
 
+#whatido-text-columns {
+  padding-bottom: 100px;
+}
+
 .i-do-text {
   text-align: left;
 }
 
 .icon {
   text-align: center;
-  color: rgba(232, 117, 136, .75);
+  color: white;
 }
 
 
 /*---------------Portfolio-----------------*/
 
 .portfolio {
-  text-align: center;
   overflow: hidden;
-  margin-bottom: 100px;
-}
-
-.portfolio-example { 
-  width: 46%;
-  display: inline-block; 
-  position: relative; 
-  overflow: hidden; 
-  margin: 0 15px 20px 15px;
-  border-radius: 20px;
-}
-
-.portfolio-img {
-  width: 100%;
-  border-radius: 20px;
-  border: 3px solid rgb(232, 117, 136);
-  display: block;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.portfolio .row {
-  margin: 75px 20px
+  padding-bottom: 100px;
+  background-color: white ;
 }
 
 .portfolio h2 {
-  margin: 100px 0;
+  text-align: center;
+  color: rgb(78,140,167);
+  margin: 0 0 100px 0;
+
 }
 
-.portfolio h3 {
-  padding-top: 40px;
-  color: rgb(232, 117, 136);
-}
-
-.portfolio .col-sm-6 {
+.container-fluid,
+.project {
   padding: 0;
+  overflow: hidden;
 }
 
-.caption { 
-  width: 100%; 
-  padding: 10px 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+.row {
+  margin: 0;
 }
 
-.caption p, .caption h3 { 
-  font-size: .75em;
+.project img {
+  display: block;
+  max-height: 300px;
+  opacity: 1;
+  transition: opacity 0.75s ease-in-out;
 }
+
+.project-text {
+  padding-top: 90px;
+  z-index: 100;
+  color: rgb(78,140,167);
+  position: absolute;
+  top: 0px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    transition: opacity 0.75s ease-in-out;
+}
+
+.fade {
+   opacity: 0;
+   transition: opacity 0.75s ease-in-out;
+   -moz-transition: opacity 0.75s ease-in-out;
+   -webkit-transition: opacity 0.75s ease-in-out;
+}
+
+.fade:hover {
+      opacity: 1;
+}
+
+/*------------------------------------*/
+
+
 
 /*---------------Contact Me-----------------*/
 
@@ -212,13 +269,22 @@ a:hover {
   padding-left: 137px;
 }
 
+#contact-me h1 {
+  font-size: 35px;
+}
+
 .contact-links li,
 #contact-me h4 {
   color: white;
 }
 
+.comtact-links {
+  padding-left: 30px;
+}
+
 .contact-links li {
   font-size: 1.25em;
+  padding-bottom: 10px;
 }
 
 contact-me a {
@@ -226,33 +292,33 @@ contact-me a {
 }
 
 #contact-me a:hover {
-  color: rgb(232, 117, 136);
+  color: rgb(78,140,167);
   text-decoration: none;
 }
 
 .contact-links i,
 #contact-me h1 {
-  color: rgb(232, 117, 136);
+  color: rgb(78,140,167);
 }
 
 #have-chat {
-  padding-top: 100px;
+  padding: 100px 30px 0 0;
 }
 
 /*---------------Footer-----------------*/
 
 footer {
   text-align: center;
-  color: #252525;
+  color: white;
   
-  background: rgb(232, 117, 136);
+  background-color: rgba(78,140,167,0.75);
   padding: 75px 0;
 }
 
 #footer-links li {
   display: inline;
   padding: 0px 40px;
-  border-right: 1px solid #252525;
+  border-right: 1px solid white;
 }
 
 #footer-links li:nth-child(4) {
@@ -264,8 +330,13 @@ footer {
 }
 
 @media only screen and (max-width: 580px) { 
+
+  .navbar-toggle {
+    margin-left: 30px;
+  }
+
   .header {
-    padding-top: 224px;
+    padding-top: 100px;
   }
 
   #logo {
@@ -278,11 +349,15 @@ footer {
   }
 
   #logo h4 {
-    font-size: 15px;
+    font-size: 18px;
   }
 
-    .contact-links li {
+  .contact-links li {
     font-size: 12px;
+  }
+
+  .fa-3x {
+    font-size: 2.5em;
   }
 }
 
