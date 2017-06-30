@@ -1,50 +1,39 @@
-// Smooth scroll for in page links
-//
-// http://wibblystuff.blogspot.co.uk/2014/04/in-page-smooth-scroll-using-css3.html
-//
-
-$(function(){
-    var target, scroll;
-
-    $("a[href*=#]:not([href=#])").on("click", function(e) {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            target = $(this.hash);
-            target = target.length ? target : $("[id=" + this.hash.slice(1) + "]");
-
-            if (target.length) {
-                if (typeof document.body.style.transitionProperty === 'string') {
-                    e.preventDefault();
-                  
-                    var avail = $(document).height() - $(window).height();
-
-                    scroll = target.offset().top;
-                  
-                    if (scroll > avail) {
-                        scroll = avail;
-                    }
-
-                    $("html").css({
-                        "margin-top" : ( $(window).scrollTop() - scroll ) + "px",
-                        "transition" : "1s ease-in-out"
-                    }).data("transitioning", true);
-                } else {
-                    $("html, body").animate({
-                        scrollTop: scroll
-                    }, 1000);
-                    return;
-                }
-            }
-        }
-    });
-
-    $("html").on("transitionend webkitTransitionEnd msTransitionEnd oTransitionEnd", function (e) {
-        if (e.target == e.currentTarget && $(this).data("transitioning") === true) {
-            $(this).removeAttr("style").data("transitioning", false);
-            $("html, body").scrollTop(scroll);
-            return;
-        }
-    });
-});
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
 
 $(".fade").mouseenter(function() {
     $("#" + this.id).prev().css("opacity", 0.25);
