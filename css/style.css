@@ -49,6 +49,10 @@ a:hover {
   margin: 0 auto;
 }
 
+.nav {
+  padding-left: 20px;
+}
+
 .navbar,
 .navbar-default {
   border: none;
@@ -117,6 +121,9 @@ a:hover {
   padding: 20px
 }
 
+.social i {
+  font-size: 30px;
+}
 
 
 /*---------------About Me-----------------*/
@@ -131,13 +138,17 @@ a:hover {
 
 .about-me img {
   background: green;
-  max-height: 250px;
+  max-height: 150px;
   border-radius: 50%;
   border: 3px solid white;
 }
 
 #bio {
   padding: 20px;
+}
+
+.profile-pic {
+    margin-top: 55px;
 }
 
 /*----------------What I Do -------------------*/
