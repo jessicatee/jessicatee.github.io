@@ -35,10 +35,13 @@ $('a[href*="#"]')
     }
   });
 
-$(".fade").mouseenter(function() {
-    $("#" + this.id).prev().css("opacity", 0.25);
-});
+if ( $(window).width() > 739) {
+    $(".fade").mouseenter(function() {
+        $("#" + this.id).prev().css("opacity", 0.25);
+    });
 
-$(".fade").mouseleave(function() {
-    $("#" + this.id).prev().css("opacity", 1);
-});
+    $(".fade").mouseleave(function() {
+        $("#" + this.id).prev().css("opacity", 1);
+    });      
+} 
+
