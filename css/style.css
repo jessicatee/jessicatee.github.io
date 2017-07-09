@@ -138,8 +138,8 @@ a:hover {
 
 .about-me img {
   background: green;
-  max-height: 150px;
-  border-radius: 50%;
+  max-height: 250px;
+  border-radius: 100%;
   border: 3px solid white;
 }
 
@@ -151,9 +151,6 @@ a:hover {
   padding: 20px;
 }
 
-.profile-pic {
-    margin-top: 55px;
-}
 
 /*----------------What I Do -------------------*/
 
@@ -218,8 +215,9 @@ a:hover {
 
 .portfolio {
   overflow: hidden;
-  padding-bottom: 100px;
+  margin-bottom: 233px;
   background-color: white ;
+  width: 85%;
 }
 
 .portfolio h2 {
