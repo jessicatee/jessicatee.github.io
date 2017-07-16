@@ -340,44 +340,18 @@ footer {
 
 /*---------------Media Queries-----------------*/
 
-@media (min-width : 901px) {
-  .what-i-do section {
-    width: 33.33333333%;
-    float: left;
-  }
-
-  #aboutme-image {
-  display: inline;
-  float: left;
-  }
-
-  #aboutme-image img {
-  max-height: 190px;
-  margin: 5px 0;
-  }
-
-  #aboutme-text {
-  display: inline;
-  float: right;
-  width: 75%;
-  }
+@media (min-width : 770px) {
 
   .fade:hover {
       opacity: 1;
-  }
-}
-
-@media only screen and (max-width: 770px) {
-
-  .project img,
-  .project-text,
-  .fade {
-    transition: none;
   }
 
   .fade {
     opacity: 0;
   }
+}
+
+@media only screen and (max-width: 770px) {
 
   .about-me img {
     display:block;
@@ -385,23 +359,38 @@ footer {
     max-height: 200px;
   }
 
-  .what-i-do {
-    padding-right: 50px;
-    padding-left: 50px;
+    .what-i-do {
+    padding-right: 5px;
+    padding-left: 5px;
   }
 
   .what-i-do h2 {
-    margin: 70px 0;
+    margin-bottom: 10px;
+  }
+
+  .portfolio {
+    margin-bottom: 0;
+  }
+
+  .project img {
+    margin: 0 auto;
+  }
+
+  .project-text {
+    padding-top: 0px;
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .fade {
+    opacity: 1;
   }
 
   .what-i-do section {
     width: 100%;
     padding-right: 0;
     padding-top: 25px;
-  }
-
-  .portfolio img {
-    margin-top: 40px;
   }
 
   .portfolio h3 {
@@ -445,11 +434,31 @@ footer {
   #footer-links li {
     padding: 0 15px;
   }
+
+  .project img,
+  .project-text,
+  .fade {
+    transition: none;
+  }
   
   
 }
 
 @media only screen and (max-width: 580px) { 
+
+  h2  {
+    font-size: 25px;
+  }
+
+  h3  {
+    font-size: 18px;
+  }
+
+  /*.project img,
+  .project-text,
+  .fade {
+    transition: none;
+  }*/
 
   .navbar-toggle {
     margin-left: 30px;
@@ -473,32 +482,17 @@ footer {
     font-size: 18px;
   }
 
-  .what-i-do {
-    padding-right: 25px;
-    padding-left: 25px;
-  }
-
-  .what-i-do h2 {
-    margin-bottom: 10px;
-  }
-
-  .project img {
-    margin-top: 0;
-  }
-
-  .project-text {
+  .about-me {
     padding-top: 0px;
-    position: relative;
-    display: block;
-    margin-bottom: 20px;
+    margin-top: 50px;
   }
 
-  .fade {
-    opacity: 1;
+  .about-me h2 {
+    margin: 100px 0px;
   }
 
   .about-me img {
-  max-height: 150px;
+  max-height: 200px;
   }
 
   .icon {

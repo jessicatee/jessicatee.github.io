@@ -35,7 +35,7 @@ $('a[href*="#"]')
     }
   });
 
-if ( $(window).width() > 739) {
+if ( $(window).width() > 770) {
     $(".fade").mouseenter(function() {
         $("#" + this.id).prev().css("opacity", 0.25);
     });
