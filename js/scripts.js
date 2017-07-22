@@ -1,3 +1,19 @@
+var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+
+jQuery(document).ready(function($){
+    if(!isMobile) {
+        $(window).bind('resize', function(e)
+    {
+    if (window.RT) clearTimeout(window.RT);
+      window.RT = setTimeout(function()
+    {
+    this.location.reload(false); /* false to get page from cache */
+    }, 100);
+    }); 
+
+    }
+});
+
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -45,12 +61,8 @@ if ( $(window).width() > 770) {
     });      
 }
 
-$(window).bind('resize', function(e)
-{
-  if (window.RT) clearTimeout(window.RT);
-  window.RT = setTimeout(function()
-  {
-    this.location.reload(false); /* false to get page from cache */
-  }, 100);
-}); 
+if (/Mobi/.test(navigator.userAgent)) {
+    // mobile!
+}
+
 
