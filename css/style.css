@@ -67,16 +67,16 @@ a:hover {
 }
 
 .navbar-default .navbar-nav>li>a {
-  transition: all .50s ease;
-  transition-property: color , border-bottom;
+  transition: border-bottom-color .5s ease, font-size .5s ease;
+  border-bottom:  1px solid #FFF;
   font-size: 19px;
   font-weight: 100;
   color: rgb(50,90,107);
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-  border-bottom: 1px solid  #203A45;
-  color: #203A45;
+  border-bottom-color: #203A45;
+  font-size: 22px;
 }
 
 .navbar-collapse {
@@ -210,6 +210,10 @@ a:hover {
 .icon {
   text-align: center;
   color: white;
+}
+
+.icon-padded {
+  margin-bottom: 50px;
 }
 
 
@@ -355,10 +359,18 @@ footer {
 
 @media only screen and (max-width: 770px) {
 
+  .about-me {
+    padding-top: 100px;
+  }
+
   .about-me img {
     display:block;
     margin: 0 auto;
     max-height: 200px;
+  }
+
+  .about-me h2 {
+    margin-bottom: 100px;
   }
 
     .what-i-do {
@@ -367,7 +379,11 @@ footer {
   }
 
   .what-i-do h2 {
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+  }
+
+  .icon-padded {
+    margin: 50px 0;
   }
 
   .portfolio {
@@ -396,7 +412,7 @@ footer {
   }
 
   .portfolio h3 {
-    padding-top: 10px;
+    padding-top: 30px;
   }
 
   .caption {
