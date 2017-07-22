@@ -43,5 +43,14 @@ if ( $(window).width() > 770) {
     $(".fade").mouseleave(function() {
         $("#" + this.id).prev().css("opacity", 1);
     });      
-} 
+}
+
+$(window).bind('resize', function(e)
+{
+  if (window.RT) clearTimeout(window.RT);
+  window.RT = setTimeout(function()
+  {
+    this.location.reload(false); /* false to get page from cache */
+  }, 100);
+}); 
 

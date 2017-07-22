@@ -235,7 +235,7 @@ a:hover {
 
 .container-fluid,
 .project {
-  padding: 8px 16px;
+  padding: 0;
   overflow: hidden;
 }
 
@@ -373,9 +373,13 @@ footer {
     margin-bottom: 100px;
   }
 
-    .what-i-do {
+  .what-i-do {
     padding-right: 5px;
     padding-left: 5px;
+  }
+
+  .what-i-do .wrapper {
+  width: 93%;
   }
 
   .what-i-do h2 {
