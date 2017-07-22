@@ -486,8 +486,8 @@ footer {
   }
 
   .header {
-    padding-top: 100px;
-    height: 310px;
+    padding-top: 45%;
+    height: calc(100vh);
   }
 
   #logo {
