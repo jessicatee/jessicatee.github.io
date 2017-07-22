@@ -1,5 +1,6 @@
+// variavble to check if the device used is a mobile
 var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
-
+// If not mobile this reloads the window when it is resized to stop hover effects in portfolio working
 if(!isMobile) {
     $(window).bind('resize', function(e)
     {
