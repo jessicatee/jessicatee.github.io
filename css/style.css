@@ -110,6 +110,11 @@ a:hover {
   border-radius: 6px;
   font-size: 19px;
   margin-top: 30px;
+  transition: padding .50s ease;
+}
+
+#logo button:hover {
+  padding: 18px;
 }
 
 .social {
