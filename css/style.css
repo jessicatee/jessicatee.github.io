@@ -67,16 +67,16 @@ a:hover {
 }
 
 .navbar-default .navbar-nav>li>a {
-  transition: all .50s ease;
-  transition-property: color , border-bottom;
+  transition: border-bottom-color .5s ease, font-size .5s ease;
+  border-bottom:  1px solid #FFF;
   font-size: 19px;
   font-weight: 100;
   color: rgb(50,90,107);
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-  border-bottom: 1px solid  #203A45;
-  color: #203A45;
+  border-bottom-color: #203A45;
+  font-size: 22px;
 }
 
 .navbar-collapse {
@@ -84,10 +84,9 @@ a:hover {
 }
 
 .header {
-  margin-bottom: 200px;
-  padding-top: 200px;
+  padding-top: 21%;
   width: 100%;
-  height: 615px;
+  height: calc(100vh);
 }
 
 .contact-links .fa-4x {
@@ -217,6 +216,10 @@ a:hover {
   color: white;
 }
 
+.icon-padded {
+  margin-bottom: 50px;
+}
+
 
 /*---------------Portfolio-----------------*/
 
@@ -236,7 +239,7 @@ a:hover {
 
 .container-fluid,
 .project {
-  padding: 8px 16px;
+  padding: 0;
   overflow: hidden;
 }
 
@@ -360,19 +363,35 @@ footer {
 
 @media only screen and (max-width: 770px) {
 
+  .about-me {
+    padding-top: 100px;
+  }
+
   .about-me img {
     display:block;
     margin: 0 auto;
     max-height: 200px;
   }
 
-    .what-i-do {
+  .about-me h2 {
+    margin-bottom: 100px;
+  }
+
+  .what-i-do {
     padding-right: 5px;
     padding-left: 5px;
   }
 
+  .what-i-do .wrapper {
+  width: 93%;
+  }
+
   .what-i-do h2 {
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+  }
+
+  .icon-padded {
+    margin: 50px 0;
   }
 
   .portfolio {
@@ -401,7 +420,7 @@ footer {
   }
 
   .portfolio h3 {
-    padding-top: 10px;
+    padding-top: 30px;
   }
 
   .caption {
@@ -472,8 +491,8 @@ footer {
   }
 
   .header {
-    padding-top: 100px;
-    height: 310px;
+    padding-top: 45%;
+    height: calc(100vh);
   }
 
   #logo {
