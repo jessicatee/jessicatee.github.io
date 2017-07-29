@@ -84,7 +84,6 @@ a:hover {
 }
 
 .header {
-  padding-top: 21%;
   width: 100%;
   height: calc(100vh);
 }
@@ -95,11 +94,14 @@ a:hover {
 
 
 #logo {
+  /*position: absolute;*/
+/*  top: 196px;
+  left: 478px;*/
+  width: 350px;
+  height: 278px;
   background-color: rgba(255, 255, 255, .93);
   border-radius: 5px;
   color: #4E8CA7;
-  width: 350px;
-  padding: 35px 0;
 }
 
 #logo button {

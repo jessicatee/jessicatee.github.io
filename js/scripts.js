@@ -1,16 +1,13 @@
-// variavble to check if the device used is a mobile
-var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
-// If not mobile this reloads the window when it is resized to stop hover effects in portfolio working
-if(!isMobile) {
-    $(window).bind('resize', function(e)
+$(window).bind('resize', function(e)
     {
-      if (window.RT) clearTimeout(window.RT);
-        window.RT = setTimeout(function()
-        {
-        this.location.reload(false); /* false to get page from cache */
-      }, 100);
+       $('#logo').css({
+          position:'absolute',
+          left: ($(window).width() - $('#logo').outerWidth())/2,
+          top: ($(window).height() - $('#logo').outerHeight())/2
+        }); 
     }); 
-}
+
+$(window).resize();
 
 // Select all links with hashes
 $('a[href*="#"]')
