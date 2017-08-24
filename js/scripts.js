@@ -1,3 +1,4 @@
+// vertically center the logo div according to window sizes
 $(window).bind('resize', function(e)
     {
        $('#logo').css({
