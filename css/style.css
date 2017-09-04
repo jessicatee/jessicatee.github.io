@@ -350,6 +350,76 @@ footer {
   clear: both;
 }
 
+/*---------------Child Benefit Calc-----------------*/
+
+#cbc {
+  background-color: rgba(78,140,167,0.75);
+}
+
+.cbc-container  {
+  width: 60%;
+  /*border: 1px solid #4E8CA7;*/
+  border-radius: 6px;
+  padding: 40px;
+  margin: 100px auto;
+  background-color: white;
+  box-shadow: 4px 6px 15px 0px rgba(97,97,97,1);
+}
+
+.cbc-container h1,
+.cbc-container h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  text-align: center;
+  color: #4E8CA7;
+}
+
+.cbc-container h1 {
+  margin: 50px auto;
+}
+
+#cbc-form {
+  margin: 20px auto;
+  width: 80%;
+}
+
+#cbc-form button {
+  border-radius: 6px;
+    padding: 20px;
+    font-size: 22px;
+    background-color: white;
+    border: 1px solid #4E8CA7;
+    color: #4E8CA7;
+    width: 100%;
+    text-align: center;
+}
+
+#futureDates,
+#futureDatesHeader,
+#results {
+  display: none;
+}
+
+#results,
+#futureDatesHeader {
+  margin-top: 50px;
+}
+
+#futureDates {
+  list-style: none;
+  text-align: center;
+  color: #4E8CA7; 
+}
+
+#futureDates li {
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+#cbc-footer {
+  background-color: rgb(122, 168, 189);
+}
+
 /*---------------Media Queries-----------------*/
 
 @media (min-width : 770px) {
