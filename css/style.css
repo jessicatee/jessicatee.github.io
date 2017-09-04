@@ -538,6 +538,18 @@ footer {
   .fade {
     transition: none;
   }
+
+  .cbc-container {
+    width: 85%;
+  }
+
+  .cbc-container h1 {
+    font-size: 30px;
+  }
+
+  .cbc-container h2 {
+    font-size: 24px;
+  }
   
   
 }
@@ -611,6 +623,24 @@ footer {
 
   .fa-3x {
     font-size: 2.5em;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .cbc-container {
+    padding: 5px;
+  }
+
+  .cbc-container h1 {
+    font-size: 22px;
+  }
+
+  .cbc-container h2 {
+    font-size: 18px;
+  }
+
+  #futureDates li {
+    font-size: 16px;
   }
 }
 
