@@ -383,7 +383,7 @@ footer {
   width: 80%;
 }
 
-#cbc-form button {
+#cbc-form #submitButton {
   border-radius: 6px;
     padding: 20px;
     font-size: 22px;
