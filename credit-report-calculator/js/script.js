@@ -1,13 +1,4 @@
 var futureDates = function(date, amount){
-	// var table = document.querySelector('#futureDates tbody');
-	// table.innerHTML = "";
-
-	// for (var i = 0; i < amount; i++) {
-	// 	var row = table.insertRow(i);
-	// 	var cell = row.insertCell(0);
-	// 	cell.innerHTML = (date.toDateString(date.setDate(date.getDate() + 28)));
-	// }
-
 	var ul = document.querySelector('#futureDates');
 	ul.innerHTML = "";
 
